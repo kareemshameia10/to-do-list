@@ -1779,7 +1779,7 @@ document.getElementById('taskTabs').addEventListener('click',e=>{
 
 // ---- INIT ----
 loadState();
-aiKey = ls.get('apikey','');
+aiKey = ls.get('apikey','') || BUILTIN_KEY;
 applyTheme();
 
 // Refresh subject select for task modal
